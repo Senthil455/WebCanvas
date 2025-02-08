@@ -2,5 +2,5 @@
 
     > Screenshot for the reference
 
-![Image](images/image.png)
+![Image](Images/image.png)
 
