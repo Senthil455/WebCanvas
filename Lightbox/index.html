@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Click a thumbnail to open it larger</p>
+    <div class="thumbs">
+      <button class="thumb" data-bg="linear-gradient(135deg, rgb(44, 162, 14), #073d02)">
+        <span>Green</span>
+      </button>
+      <button class="thumb" data-bg="linear-gradient(135deg, #1f6bff, #0a1f4a)">
+        <span>Blue</span>
+      </button>
+      <button class="thumb" data-bg="linear-gradient(135deg, #ff7a45, #4a1200)">
+        <span>Orange</span>
+      </button>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="close" id="close" aria-label="Close">&times;</button>
+      <div class="view" id="view"><span id="label">Preview</span></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
