@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.hero {
+  width: min(520px, 100%);
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid rgba(44, 162, 14, 0.5);
+  border-radius: 999px;
+  color: #9dffb0;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+}
+
+.sub {
+  text-decoration: none;
+  color: #a8a8a8;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.actions a {
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease, background 0.2s ease;
+}
+
+.primary {
+  background: rgb(44, 162, 14);
+  color: black;
+}
+
+.primary:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  border: 1px solid #333;
+  color: #e2e2e2;
+}
+
+.ghost:hover {
+  border-color: #555;
+  background: #161616;
+  transform: translateY(-2px);
+}
