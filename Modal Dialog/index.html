@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Dialog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>A native dialog with a backdrop</p>
+    <button class="open" id="open">Delete project</button>
+
+    <dialog class="modal" id="modal">
+      <h3>Delete this project?</h3>
+      <p>This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button class="cancel" id="cancel">Cancel</button>
+        <button class="confirm" id="confirm">Delete</button>
+      </div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
