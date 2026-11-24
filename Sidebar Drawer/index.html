@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Drawer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Slide out navigation from the left</p>
+    <button class="menu-btn" id="open">Open menu</button>
+
+    <aside class="drawer" id="drawer">
+      <div class="drawer-head">
+        <span>Navigation</span>
+        <button class="close" id="close" aria-label="Close">&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#">Dashboard</a>
+        <a href="#">Projects</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
