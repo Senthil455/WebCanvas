@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave Divider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Layered waves between two sections</p>
+    <div class="stack">
+      <section class="panel top">Above the wave</section>
+      <div class="wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,72 L1440,120 L0,120 Z"
+            fill="rgba(44, 162, 14, 0.35)"
+          />
+          <path
+            d="M0,88 C260,130 520,24 760,52 C1000,80 1220,126 1440,92 L1440,120 L0,120 Z"
+            fill="rgb(44, 162, 14)"
+          />
+        </svg>
+      </div>
+      <section class="panel bottom">Below the wave</section>
+    </div>
+  </body>
+</html>
