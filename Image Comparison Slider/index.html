@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Comparison Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Drag the handle to reveal the change</p>
+    <div class="compare" id="compare">
+      <div class="layer before"><span>Before</span></div>
+      <div class="layer after" id="after"><span>After</span></div>
+      <input
+        class="slider"
+        id="slider"
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        aria-label="Comparison slider"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
