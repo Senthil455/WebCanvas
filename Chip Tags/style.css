@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 320px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #333;
+  border-radius: 999px;
+  background: #141414;
+  color: #d4d4d4;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.chip:hover {
+  border-color: rgba(44, 162, 14, 0.6);
+  color: #fff;
+}
+
+.chip.active {
+  border-color: rgb(44, 162, 14);
+  background: rgba(44, 162, 14, 0.16);
+  color: #9dffb0;
+}
+
+.chip.removable b {
+  color: #7d7d7d;
+  font-weight: normal;
+}
+
+.chip.removable:hover b {
+  color: #ff8a8a;
+}
