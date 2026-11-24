@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.loader {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.loader span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(44, 162, 14);
+  animation: bounce 0.9s ease-in-out infinite;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  40% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+}
