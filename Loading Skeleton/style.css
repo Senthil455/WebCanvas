@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.skeletons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(320px, 100%);
+}
+
+.skeleton {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.6rem 1rem;
+  padding: 1rem;
+  border: 1px solid #222;
+  border-radius: 12px;
+  background: #0e0e0e;
+}
+
+.avatar,
+.line {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1c1c1c;
+}
+
+.avatar {
+  grid-row: span 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.line {
+  height: 10px;
+}
+
+.line.long {
+  width: 85%;
+  margin-top: 6px;
+}
+
+.line.short {
+  width: 55%;
+}
+
+.avatar::after,
+.line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
